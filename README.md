@@ -1,7 +1,7 @@
 # ReadMe - Book recommendation system
 
 Recommends book based on the book chosen by the user.\
-Internally, finds the cosine similarity between the book descriptions and recommends the top 10 books.\
+Internally, finds the cosine similarity between the book descriptions and recommends the top 10 books.
 
 The registration page 
 ![image](https://user-images.githubusercontent.com/94833021/229346716-20df7151-aae9-43f2-b3a3-eadac68528c3.png)
