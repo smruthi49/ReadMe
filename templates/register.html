@@ -1,0 +1,41 @@
+<html>
+    <head>
+        <title>Register</title>
+        <link rel="stylesheet" href="/static/style.css">
+        <style>
+            body{
+                background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+                url("../static/bg.jpg");
+                background-repeat: no-repeat;
+                width:100%;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="register">
+            <h1>Register</h1>
+            <div class="links">
+                <a href="{{url_for('home')}}" >Login</a>
+                <a href="{{url_for('register')}}" class="active">Register</a>
+            </div>
+            <form action="{{url_for('register')}}" method="POST">
+                
+                <label for="username">
+                </label>
+                <input type="text" name="username" placeholder="Username" id="username" required>
+                
+                <label for="password">
+                
+                </label>
+                <input type="password" name="password" placeholder="Password" id="password" required>
+               
+                <label for="email">
+                  
+                </label>
+                <input type="email" name="email" placeholder="Email" id="email" required>
+                <div class="msg">{{ msg }}</div>
+                <input type="submit" value="Register">
+            </form>
+        </div>
+    </body>
+</html>
